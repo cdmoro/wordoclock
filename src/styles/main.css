@@ -83,7 +83,7 @@ body:not(.show-time) #time-clock {
   display: grid;
   grid-template-columns: repeat(11, 1fr);
   row-gap: 5px;
-  font-size: 2.5vw;
+  font-size: 3vmin;
   max-width: 80vw;
 }
 
@@ -93,7 +93,7 @@ body.loading #clock .char {
 }
 
 .char {
-  padding: 1.5vw 2vw;
+  padding: 2vmin;
   text-align: center;
   color: color-mix(in srgb, var(--font-color), transparent 80%);
   transition: opacity 1s, color .5s, background .5s, border-radius .5s;
@@ -335,34 +335,12 @@ footer {
 }
 
 @media screen and (min-width: 1000px) {
-  #clock {
-    font-size: 2vw;
-  }
-
-  .char {
-    padding: 1.5vh 1.5vw;
-  }
-
   #flex-clock {
     font-size: 2.5vw;
   }
 }
 
-@media screen and (min-width: 1600px) {
-  #clock {
-    font-size: 3rem;
-  }
-
-  .char {
-    padding: 1.5rem;
-  }
-}
-
 @media only screen and (max-width: 750px) {
-  #clock {
-    font-size: 3vw;
-  }
-
   #exit-zen {
     font-size: 1.7rem;
   }
